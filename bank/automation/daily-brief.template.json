@@ -1,0 +1,20 @@
+{
+  "name": "Morning brief",
+  "enabled": false,
+  "schedule": {
+    "kind": "cron",
+    "expr": "0 8 * * *",
+    "tz": "America/New_York"
+  },
+  "sessionTarget": "isolated",
+  "payload": {
+    "kind": "agentTurn",
+    "message": "Read the owner-configured live Agenda and connected calendar. Give a concise brief: today's schedule and locations, outstanding tasks and upcoming deadlines with direct links, and weather for the owner's configured city. Flag conflicts. Distinguish unchecked from verified unsubmitted. If a service is unavailable, say so. Never guess that there are no tasks.",
+    "thinking": "max"
+  },
+  "delivery": {
+    "mode": "announce",
+    "channel": "discord",
+    "to": "user:YOUR_DISCORD_USER_ID"
+  }
+}

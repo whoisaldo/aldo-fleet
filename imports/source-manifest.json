@@ -1,0 +1,352 @@
+{
+  "captured_at": "2026-10-06T16:15:54.405778+00:00",
+  "sources": [
+    {
+      "source": "Historical custom skills; private repository metadata omitted"
+    },
+    {
+      "source": "Historical agent configuration; private repository metadata omitted"
+    },
+    {
+      "repository": "https://github.com/whoisaldo/claude-codex-skills",
+      "head": "5a9696646cd71ee38a932ddb389e866ec8929312",
+      "dirty": false
+    }
+  ],
+  "imported_skills": [
+    {
+      "path": "skills/codex-3d/tests/test_codex_3d.py",
+      "sha256": "c7d1db725d4e734c47219138c4c3cedaf8ccf267759c4c0329e70b1ddc17fefc"
+    },
+    {
+      "path": "skills/baseline-ui/SKILL.md",
+      "sha256": "0957eead1bb79f848e623f88e7616171d7a42e67c6d090af50a0558fc892f9da"
+    },
+    {
+      "path": "skills/codex-3d/.claude-only",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "skills/codex-3d/.gitignore",
+      "sha256": "e15b1b0e0f10012abb6f06891455da689a7a4ff323b70ce46144d8611b7d4d8a"
+    },
+    {
+      "path": "skills/codex-3d/README.md",
+      "sha256": "bb9cff54371aade1ab34301e89e850d7371671906f7c81fa80cb8d5c2c7b4a96"
+    },
+    {
+      "path": "skills/codex-3d/SKILL.md",
+      "sha256": "ffb2bb1db5f2de86d913057d4bb158487d1839b804fa8f3edb1217d2fc31326b"
+    },
+    {
+      "path": "skills/codex-3d/assets/check.mjs",
+      "sha256": "619ddd30690602a1bbe3220b633b3fb744e7a888e067ece4af59a8ac7e83bc1c"
+    },
+    {
+      "path": "skills/codex-3d/assets/viewer-svg.html",
+      "sha256": "97113822a3d00f190453e19be939946210902ff40a86cbe62cdbb5ec95774803"
+    },
+    {
+      "path": "skills/codex-3d/assets/viewer-three.html",
+      "sha256": "fe85e1f5d57fd6e3d20b8b6fc2efc1b6586b02dc48dfed000c03a7dd9cb1f7a6"
+    },
+    {
+      "path": "skills/codex-3d/examples/car-blender/notes.md",
+      "sha256": "f27cdfb0e3f8d69ccdc7884619a30b5ee6a6d29071a516d43b960ca1207916ae"
+    },
+    {
+      "path": "skills/codex-3d/examples/car-blender/preview.png",
+      "sha256": "53773d68a1744f33d9eca104067be2f01649e4ee834929b4fec1da88973d808f"
+    },
+    {
+      "path": "skills/codex-3d/examples/car-blender/sheet.png",
+      "sha256": "133ee3530c7bdae55f88b4fcf53e534c2979762d6aee8aff8d88fb3b264aa924"
+    },
+    {
+      "path": "skills/codex-3d/examples/car-blender/spec.txt",
+      "sha256": "32a45fa56cbbadef0e4cfc729a66db371cde058762caa0d1895c459f6dcdb684"
+    },
+    {
+      "path": "skills/codex-3d/examples/car-svg/notes.md",
+      "sha256": "f4e4a7abfd7071e7de384bffe3a1a68ca430fa7d3e065d56ac380e184cc6a023"
+    },
+    {
+      "path": "skills/codex-3d/examples/car-svg/object.svg",
+      "sha256": "737109e5312d99156696217ee033905f9aef06dadc625e7369bb738a8c685f61"
+    },
+    {
+      "path": "skills/codex-3d/examples/car-svg/preview.png",
+      "sha256": "49bdf9ea1013aa299217c0ad0e922363c94fad0aeb69d7770f7f83b9d68f8d37"
+    },
+    {
+      "path": "skills/codex-3d/examples/car-svg/spec.txt",
+      "sha256": "2fbfb67b4166e13e147efa6db8bfcc627aa52d05d14eeced47e7fe691a24b38e"
+    },
+    {
+      "path": "skills/codex-3d/examples/car/notes.md",
+      "sha256": "79b7787617f4d9525079c8c398dec5f9bb8a6fe139203beeeebfa429d3bb8400"
+    },
+    {
+      "path": "skills/codex-3d/examples/car/object.js",
+      "sha256": "453a6b69bae146c72e5b8c7c553662de3a1c9e523d77b2de38e5010c9b89f57f"
+    },
+    {
+      "path": "skills/codex-3d/examples/car/preview.png",
+      "sha256": "235be2af57813140be2a74798927d87cd67ddfc8863602f324ffb2d271c9e267"
+    },
+    {
+      "path": "skills/codex-3d/examples/car/sheet.png",
+      "sha256": "407afd7cb9f3a854abebd8c285542b314d771aa63170288b117cf53d63786660"
+    },
+    {
+      "path": "skills/codex-3d/examples/car/spec.txt",
+      "sha256": "32d3daca108f16f0abac1170d574e19c46affd3f8360908b373394bfc7a955cd"
+    },
+    {
+      "path": "skills/codex-3d/references/prompting.md",
+      "sha256": "8823f32fb1ed48023b34ebe3104cefd69d5f6a4999c7366a141264898b6edd5a"
+    },
+    {
+      "path": "skills/codex-3d/scripts/codex_3d.py",
+      "sha256": "2609046bf73232a368bd88e131436a97a3200a129a05a3efeac5e5a39b67b106"
+    },
+    {
+      "path": "skills/codex-computer-use/.claude-only",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "skills/codex-computer-use/.gitignore",
+      "sha256": "b0e9ee2e09d9697566760f94f62331a7c4deda97d8e9da77a0b5c02dd2cbff57"
+    },
+    {
+      "path": "skills/codex-computer-use/README.md",
+      "sha256": "c87a6e2024dddcf54c95b935ff92ca90ad2b2f32e443f0025d2983d12e52e5df"
+    },
+    {
+      "path": "skills/codex-computer-use/SKILL.md",
+      "sha256": "010f0ddf60e4c7498b99de78a1cb48d24eac3d85f22d4f37f4260701386b925d"
+    },
+    {
+      "path": "skills/codex-computer-use/assets/prompt.txt",
+      "sha256": "069b00ac159c782866e8dab58fb177ef26730efe8dbdfa227fe3da092c9d82fa"
+    },
+    {
+      "path": "skills/codex-computer-use/assets/report.schema.json",
+      "sha256": "825c59133289d1c797f46c9c66754f9d633fbf051447ce9486e25dfca970e443"
+    },
+    {
+      "path": "skills/codex-computer-use/examples/README.md",
+      "sha256": "3e8e2d28f3a9eea245b5cb91e5ed5ded0dd38fda32c1a04a18f0510a8b10f4d4"
+    },
+    {
+      "path": "skills/codex-computer-use/examples/fix.diff",
+      "sha256": "ef2c3eac23492dbcc0159107b0cab9d255567b1421fbe4fe985b0f613a3bde4a"
+    },
+    {
+      "path": "skills/codex-computer-use/examples/fixed-page/index.html",
+      "sha256": "54197d52ced3eb344c779b57c0c6967c740fc2fdd28eb8a3009c9855462ce671"
+    },
+    {
+      "path": "skills/codex-computer-use/examples/probe-page/index.html",
+      "sha256": "914ecd95aaf034a7c68966739546b1ab6ff71d769edb820c8321f2b1f9d5b11d"
+    },
+    {
+      "path": "skills/codex-computer-use/examples/run1-as-built/01-initial.png",
+      "sha256": "b08a2773a5a7fea73c34523f115b1e8f5a1c0676b7ee578fc309623fcd4c4d99"
+    },
+    {
+      "path": "skills/codex-computer-use/examples/run1-as-built/02-email-filled.png",
+      "sha256": "38aa116bd080fea7bffd3e1268f2decda28ed9bbda33f165616c863fd63a35bb"
+    },
+    {
+      "path": "skills/codex-computer-use/examples/run1-as-built/03-after-submit.png",
+      "sha256": "4b0bf6c0c83abccc45af3c155b4d7228c8b7021b72bf9535ff2d4dc758857c62"
+    },
+    {
+      "path": "skills/codex-computer-use/examples/run1-as-built/prompt-sent.txt",
+      "sha256": "d3a90c45bbdf22f59aa5d32ab96bdc863ed4f9a1ad4b6262273e4fc4d5c63a0b"
+    },
+    {
+      "path": "skills/codex-computer-use/examples/run1-as-built/report.json",
+      "sha256": "6dbc6a7d8d01615df35bd56fa3f1c9680cfafe794c384a4b37a549e5e1573b26"
+    },
+    {
+      "path": "skills/codex-computer-use/examples/run1-as-built/report.md",
+      "sha256": "e72b7bfa1100232f0dfb00f1406cdb33f83e68f2a76461d8b48c6fb4fddc8c47"
+    },
+    {
+      "path": "skills/codex-computer-use/examples/run2-first-fix/01-initial.png",
+      "sha256": "69a961cb0e6bf5b35ea44e5749f737c9e0b11bc9faaddd4b50f43b700a39aa8d"
+    },
+    {
+      "path": "skills/codex-computer-use/examples/run2-first-fix/03-after-submit.png",
+      "sha256": "02938f7a0a61f0d24ca500e85922c7b33e369aa13e9067541b6a77777b95c1b3"
+    },
+    {
+      "path": "skills/codex-computer-use/examples/run2-first-fix/report.json",
+      "sha256": "9524b1cea03d4e499f309c7dcb77708d25fd759755b0b7c20a1647e5348d79ad"
+    },
+    {
+      "path": "skills/codex-computer-use/examples/run2-first-fix/report.md",
+      "sha256": "646f52800bd038420e2c1e7fbe84e45d38077920e739d3a2550737cbf8c3ea81"
+    },
+    {
+      "path": "skills/codex-computer-use/examples/run3-fixed/01-initial.png",
+      "sha256": "2f8b2f13bf892a4039757dfe3807439b05860c3ce5bc9d4727ca12442a50c63d"
+    },
+    {
+      "path": "skills/codex-computer-use/examples/run3-fixed/03-after-submit.png",
+      "sha256": "0366b15188ee8829d8374ec718028254322a9f9163d84cebe6298b061705f943"
+    },
+    {
+      "path": "skills/codex-computer-use/examples/run3-fixed/report.json",
+      "sha256": "4acec5b4044c5f0745b1b71077c1144e6b4877206dd3aedbbf7329209b6fe164"
+    },
+    {
+      "path": "skills/codex-computer-use/examples/run3-fixed/report.md",
+      "sha256": "2a93dad39de522b700654316e289e0e776d8c88ae1d037e068056b5989e94053"
+    },
+    {
+      "path": "skills/codex-computer-use/references/briefs.md",
+      "sha256": "f0e5ceb91ff588d459e512fbafa5c45f888e3985f9b679249b4e0aa22ff802ec"
+    },
+    {
+      "path": "skills/codex-computer-use/scripts/codex_computer_use.py",
+      "sha256": "30b76d068f9d58be82f7b6cc086c8c7235b19d7d0993513b992cd56fe24bbe74"
+    },
+    {
+      "path": "skills/codex-image/.claude-only",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "skills/codex-image/README.md",
+      "sha256": "1f6c28a1ae54edbf24a29673200d08a99b6621e012dc6820acf404cdacecd842"
+    },
+    {
+      "path": "skills/codex-image/SKILL.md",
+      "sha256": "2dfa02b1084be8911128d39792c3b7cb0b8d23ac5f47f56da1a2c428ff6a26a9"
+    },
+    {
+      "path": "skills/codex-image/examples/01-hero-saas.png",
+      "sha256": "310c7b61371d453bb844d7b58d42cd60a188bfd10094a35986d6cbe27ad810bc"
+    },
+    {
+      "path": "skills/codex-image/examples/02-mascot-cutout.png",
+      "sha256": "7a6c9ccf8fec622829a90b236f4d9d9402a700a8d6d9a957bca46f9ce28d912a"
+    },
+    {
+      "path": "skills/codex-image/examples/03-laptop-mockup.png",
+      "sha256": "3fadb431dba77087497ae6353dd5784759eb6689aab4e07b14d0200d0b3613db"
+    },
+    {
+      "path": "skills/codex-image/examples/04-emptystate-1.png",
+      "sha256": "516eb175ff4cd8219cc55920c89036faa8700f9ad3907c81ccdb9f385da8955c"
+    },
+    {
+      "path": "skills/codex-image/examples/04-emptystate-2.png",
+      "sha256": "535e7075866ee8455511b05572bc0f00e04ab3569906502f2fe35a3723ce7358"
+    },
+    {
+      "path": "skills/codex-image/examples/05-hero-light.png",
+      "sha256": "de3b72cf3e21fcd8ca7c74af9785b121f21bf0a008b0f7cfd09cfa56bf6cd235"
+    },
+    {
+      "path": "skills/codex-image/examples/06-blog-header.png",
+      "sha256": "c3e67b97fd80f7a17826e99a4e86a7884632c87d6c48a3d3dd149f86aac5fb23"
+    },
+    {
+      "path": "skills/codex-image/examples/07-badge-cutout.png",
+      "sha256": "9f719e6a574337b453776893983cf369d99a633a1bc52592720081318c50c870"
+    },
+    {
+      "path": "skills/codex-image/examples/demo-screenshot.png",
+      "sha256": "01635c3cc7c7ffe86bc9ed2ff8f7c76e0ac1b05d8430660d4a7580ecf8752a8a"
+    },
+    {
+      "path": "skills/codex-image/examples/demo/img/empty.png",
+      "sha256": "27b2f0f7898b2abdbe33e8037a28096b970b7b9e6a293d5c0f1b917cabebc9de"
+    },
+    {
+      "path": "skills/codex-image/examples/demo/img/hero.png",
+      "sha256": "310c7b61371d453bb844d7b58d42cd60a188bfd10094a35986d6cbe27ad810bc"
+    },
+    {
+      "path": "skills/codex-image/examples/demo/img/mascot.png",
+      "sha256": "7a6c9ccf8fec622829a90b236f4d9d9402a700a8d6d9a957bca46f9ce28d912a"
+    },
+    {
+      "path": "skills/codex-image/examples/demo/img/product.png",
+      "sha256": "3fadb431dba77087497ae6353dd5784759eb6689aab4e07b14d0200d0b3613db"
+    },
+    {
+      "path": "skills/codex-image/examples/demo/index.html",
+      "sha256": "bd370b4f7d74f6ab273a0ef6c3ecd850d4821ba37414c5b6133aa75543c861b4"
+    },
+    {
+      "path": "skills/codex-image/references/prompting.md",
+      "sha256": "44e5173931a793bbbdbf6a2d697e2467248c55ce0d57175bf368a4f5c35fab28"
+    },
+    {
+      "path": "skills/codex-image/scripts/codex_image.py",
+      "sha256": "d0a0b0f0871387350d29477760d4fb31f74faeba85b78f8a9606c0f303797133"
+    },
+    {
+      "path": "skills/fixing-accessibility/SKILL.md",
+      "sha256": "94bfcccdf700a18cf63b92a9e8c1a05c10422c692b0bed6fab950611d8d4309c"
+    },
+    {
+      "path": "skills/fixing-motion-performance/SKILL.md",
+      "sha256": "03e7505ca8cea654a640eaf010eec80da860911432ffdcdc0280641f8109ec1b"
+    },
+    {
+      "path": "skills/frontend-design/LICENSE.txt",
+      "sha256": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594"
+    },
+    {
+      "path": "skills/frontend-design/SKILL.md",
+      "sha256": "b81e2ff87ed8fa4d6c377ccb127a7254c9e6a77e3ae94f21e6b514f7bb2945a0"
+    },
+    {
+      "path": "skills/resume-craft/SKILL.md",
+      "sha256": "8f67df9e8a8f276eabc638d1074942574cc8f0ac590bc09a1991f6e88ced425f"
+    },
+    {
+      "path": "skills/resume-craft/assets/resume-template.md",
+      "sha256": "4a6f4192ba7b25856c467f347adffbf35976308445ed2ff1070668742dfad907"
+    },
+    {
+      "path": "skills/resume-craft/references/ats-formatting.md",
+      "sha256": "857ab681f07840f8adfebd219f60a1bc399ac8a3ca5dd047c67d7f6401e4fa83"
+    },
+    {
+      "path": "skills/resume-craft/references/bullet-writing.md",
+      "sha256": "fd50fdf2089383dbfa3f08702b8a685c2d65dfa523d9193f6c0d935d3cf833c1"
+    },
+    {
+      "path": "skills/resume-craft/references/research.md",
+      "sha256": "9786bd7c9622028e33ff1dcdd38efe9f7559df197a2fd719d790ac78ffd4472b"
+    },
+    {
+      "path": "skills/resume-craft/references/review-rubric.md",
+      "sha256": "30900e9dfd1005216b4ff062220b8231ff27828d02598b39eab99bc4bc56dff0"
+    },
+    {
+      "path": "skills/resume-craft/references/tech-resume.md",
+      "sha256": "bb237e52fbfee0d77c42e033e524b9f307688337d82fc5afa219592506e82d6b"
+    },
+    {
+      "path": "skills/resume-craft/scripts/resume_audit.py",
+      "sha256": "9b1d52ad03780e48ae7b4dc307bbe9536cf3ab62bf6bbc6f3a4eb44379ae17b3"
+    },
+    {
+      "path": "skills/unslop/SKILL.md",
+      "sha256": "181883e539caec8258ec9129e3ba5f133409144a2cbf2aa361158ab94cfc3441"
+    }
+  ],
+  "excluded": [
+    "profile credentials and session state",
+    "Claude profile memory",
+    "untracked instructions.md and instructions.txt retained in private backup"
+  ],
+  "note": "Imported hashes describe the historical capture, before adaptation for public sharing. Current reviewed bytes are inventoried in bank/files.json."
+}

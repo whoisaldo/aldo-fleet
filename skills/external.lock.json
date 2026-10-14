@@ -1,0 +1,40 @@
+{
+  "skills": [
+    {
+      "name": "brag",
+      "sha256": "6d5256c72f86ea6da0e3f218f79d11f61ff183ce756aaae313f29ee220350127",
+      "source": "Existing installed third-party skill; see ~/.agents/.skill-lock.json or upstream SKILL.md",
+      "path": "vendor/skills/brag"
+    },
+    {
+      "name": "hyperframes-animation",
+      "sha256": "413ddf865fa829b0bf4c7127abf9f4aa18c7116a1ff5c707d2bf88383b88b84b",
+      "source": "Existing installed third-party skill; see ~/.agents/.skill-lock.json or upstream SKILL.md",
+      "path": "vendor/skills/hyperframes-animation"
+    },
+    {
+      "name": "hyperframes-cli",
+      "sha256": "1882c2261ab31f8b90fb7550eea5f24ec31d0ee701a3e153ee2739212154727b",
+      "source": "Existing installed third-party skill; see ~/.agents/.skill-lock.json or upstream SKILL.md",
+      "path": "vendor/skills/hyperframes-cli"
+    },
+    {
+      "name": "hyperframes-core",
+      "sha256": "56b6b92469042f8471133f5412c6d95413c8f38e1feb4ebba141f42133939de2",
+      "source": "Existing installed third-party skill; see ~/.agents/.skill-lock.json or upstream SKILL.md",
+      "path": "vendor/skills/hyperframes-core"
+    },
+    {
+      "name": "hyperframes-creative",
+      "sha256": "31d13da6617cf02a86f210d4f4e1379ebe1c3c176f4d46a957ec91a0667074f3",
+      "source": "Existing installed third-party skill; see ~/.agents/.skill-lock.json or upstream SKILL.md",
+      "path": "vendor/skills/hyperframes-creative"
+    },
+    {
+      "name": "hyperframes-keyframes",
+      "sha256": "7acc71a0091aa830c531892c249581b6371dbd23175831b11bb27442333e6d29",
+      "source": "Existing installed third-party skill; see ~/.agents/.skill-lock.json or upstream SKILL.md",
+      "path": "vendor/skills/hyperframes-keyframes"
+    }
+  ]
+}

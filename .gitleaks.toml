@@ -1,0 +1,11 @@
+title = "Shared fleet public source"
+
+[extend]
+useDefault = true
+
+[[allowlists]]
+description = "Inventory SHA256 values, verified against source bytes by check-public.py"
+targetRules = ["generic-api-key"]
+condition = "AND"
+paths = ['''(^|/)bank/files\.json$''']
+regexes = ['''^[a-f0-9]{64}$''']

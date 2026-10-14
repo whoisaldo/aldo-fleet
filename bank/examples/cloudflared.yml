@@ -1,0 +1,9 @@
+# Local-management example only. Replace values and use your own private file.
+tunnel: YOUR_TUNNEL_UUID
+credentials-file: /absolute/private/path/YOUR_TUNNEL_UUID.json
+ingress:
+  - hostname: preview.example.com
+    service: http://127.0.0.1:3000
+  - service: http_status:404
+# Configure the hostname's Access application separately. This file does not
+# create an allowlist or an authentication policy.

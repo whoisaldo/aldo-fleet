@@ -1,0 +1,24 @@
+{
+  "attribution": {
+    "commit": "",
+    "pr": "",
+    "sessionUrl": false
+  },
+  "enabledPlugins": {
+    "vercel@claude-plugins-official": true,
+    "swift-lsp@claude-plugins-official": true,
+    "rust-analyzer-lsp@claude-plugins-official": true,
+    "brag@brag": true
+  },
+  "extraKnownMarketplaces": {
+    "brag": {
+      "source": {
+        "source": "github",
+        "repo": "latent-spaces/brag"
+      }
+    }
+  },
+  "autoUpdatesChannel": "latest",
+  "inputNeededNotifEnabled": true,
+  "agentPushNotifEnabled": true
+}

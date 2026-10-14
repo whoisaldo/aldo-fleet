@@ -1,0 +1,340 @@
+{
+  "meaning": "Examples of optional assistant capabilities. This is a general reference, not an installation record. Check availability in your own OpenClaw.",
+  "skills": [
+    {
+      "name": "1password",
+      "description": "Set up and use 1Password CLI for sign-in, desktop integration, and reading or injecting secrets.",
+      "source": "openclaw-bundled"
+    },
+    {
+      "name": "add-model-provider",
+      "description": "Add and live-prove a model provider with non-interactive config one-liners, without exposing credentials.",
+      "source": "openclaw-custodian"
+    },
+    {
+      "name": "canvas-planning",
+      "description": "Explore optional Canvas LMS planning capabilities, using the user's own supported integrations.",
+      "source": "bank-capability-guide"
+    },
+    {
+      "name": "apple-notes",
+      "description": "Create, view, edit, delete, search, move, or export Apple Notes via the memo CLI on macOS.",
+      "source": "openclaw-bundled"
+    },
+    {
+      "name": "apple-reminders",
+      "description": "List, add, edit, complete, or delete Apple Reminders and reminder lists via remindctl.",
+      "source": "openclaw-bundled"
+    },
+    {
+      "name": "bear-notes",
+      "description": "Create, search, and manage Bear notes via grizzly CLI.",
+      "source": "openclaw-bundled"
+    },
+    {
+      "name": "blogwatcher",
+      "description": "Monitor blogs and RSS/Atom feeds for updates using the blogwatcher CLI.",
+      "source": "openclaw-bundled"
+    },
+    {
+      "name": "blucli",
+      "description": "BluOS CLI (blu) for discovery, playback, grouping, and volume.",
+      "source": "openclaw-bundled"
+    },
+    {
+      "name": "brag",
+      "description": "Turn the current project website into a short, polished, shareable launch video using Hyperframes. Use when someone says \"/brag\", \"let's brag about this\", \"make a launch video\", \"turn this into a video\", or wants to share what they built. Reads the project code directly , no live URL or screenshots needed.",
+      "source": "agents-skills-personal"
+    },
+    {
+      "name": "browser-automation",
+      "description": "Use when controlling web pages with the OpenClaw browser tool, especially multi-step flows, login checks, tab management, or recovery from stale refs/timeouts.",
+      "source": "openclaw-extra"
+    },
+    {
+      "name": "camsnap",
+      "description": "Capture frames or clips from RTSP/ONVIF cameras and local webcams, including USB pan/tilt/zoom control.",
+      "source": "openclaw-bundled"
+    },
+    {
+      "name": "canvas",
+      "description": "Present hosted widget documents on a connected macOS panel and control panel visibility or navigation.",
+      "source": "openclaw-extra"
+    },
+    {
+      "name": "clawhub",
+      "description": "Search ClawHub for skills when a requested capability is not already available; install, verify, update, uninstall, publish, or sync skills.",
+      "source": "openclaw-bundled"
+    },
+    {
+      "name": "cloud-image-bake",
+      "description": "Bake, select, prove, and safely retire a Cloud Worker image with crabbox and config one-liners.",
+      "source": "openclaw-custodian"
+    },
+    {
+      "name": "coding-agent",
+      "description": "Delegate coding work to Codex, Claude Code, or OpenCode as background workers; not simple edits or read-only code lookup.",
+      "source": "openclaw-bundled"
+    },
+    {
+      "name": "configure-channel",
+      "description": "Configure and prove a chat channel with non-interactive one-liners; secrets only as SecretRefs.",
+      "source": "openclaw-custodian"
+    },
+    {
+      "name": "control-ui",
+      "description": "Operate and troubleshoot the OpenClaw Control UI: navigate connected clients, organize sessions, build session dashboards, and handle direct or Tailscale-hosted Gateways.",
+      "source": "openclaw-bundled"
+    },
+    {
+      "name": "diagnose-gateway",
+      "description": "Diagnose Gateway, config, secrets, channels, and port failures with read-only one-liners.",
+      "source": "openclaw-custodian"
+    },
+    {
+      "name": "diagram-maker",
+      "description": "Create SVG/HTML or Excalidraw diagrams for concepts, architecture, flows, and whiteboards.",
+      "source": "openclaw-bundled"
+    },
+    {
+      "name": "discord",
+      "description": "Discord messaging workflows through OpenClaw's message tool.",
+      "source": "openclaw-extra"
+    },
+    {
+      "name": "eightctl",
+      "description": "Control Eight Sleep pods (status, temperature, alarms, schedules).",
+      "source": "openclaw-bundled"
+    },
+    {
+      "name": "frontend-design",
+      "description": "Create distinctive, production-grade frontend interfaces with high design quality. Use this skill when the user asks to build web components, pages, artifacts, posters, or applications (examples include websites, landing pages, dashboards, React components, HTML/CSS layouts, or when styling/beautifying any web UI). Generates creative, polished code and UI design that avoids generic AI aesthetics.",
+      "source": "agents-skills-personal"
+    },
+    {
+      "name": "gemini",
+      "description": "Gemini CLI one-shot prompts, summaries, generation, skills, hooks, MCP, or Gemma routing.",
+      "source": "openclaw-bundled"
+    },
+    {
+      "name": "gh-issues",
+      "description": "Fetch GitHub issues, select candidates, spawn background fix agents, open PRs, and optionally process PR review comments.",
+      "source": "openclaw-bundled"
+    },
+    {
+      "name": "gifgrep",
+      "description": "Search GIF providers with CLI/TUI, download results, and extract stills/sheets.",
+      "source": "openclaw-bundled"
+    },
+    {
+      "name": "github",
+      "description": "GitHub CLI for issues, PRs, CI/check logs, comments, reviews, releases, repos, and gh api queries.",
+      "source": "openclaw-bundled"
+    },
+    {
+      "name": "gog",
+      "description": "Google Workspace CLI for Gmail, Calendar, Drive, Contacts, Sheets, and Docs.",
+      "source": "openclaw-bundled"
+    },
+    {
+      "name": "goplaces",
+      "description": "Query Google Places for text search, place details, resolve, reviews, or scriptable JSON via goplaces.",
+      "source": "openclaw-bundled"
+    },
+    {
+      "name": "healthcheck",
+      "description": "Audit/harden OpenClaw hosts: SSH, firewall, updates, exposure, backups, disk encryption, gateway security.",
+      "source": "openclaw-bundled"
+    },
+    {
+      "name": "himalaya",
+      "description": "Himalaya CLI for IMAP/SMTP mail: list, read, search, compose, reply, forward, copy, move, delete.",
+      "source": "openclaw-bundled"
+    },
+    {
+      "name": "hyperframes-animation",
+      "description": "All animation knowledge for HyperFrames , atomic motion rules, multi-phase scene blueprints, scene transitions, broader motion-design techniques, AND the seven runtime adapters (GSAP default, plus Lottie, Three.js, Anime.js, CSS keyframes, Web Animations API, TypeGPU). Use for any motion or animation task: pick 2-4 rules and compose, or load a blueprint, or look up runtime-specific API (e.g. GSAP eases / Lottie player / Three.js mixer). Also covers auditing an existing composition's choreography (animation map) and 24 named text-animation effects. HyperFrames-native: single paused timeline, seek-safe, deterministic.",
+      "source": "agents-skills-personal"
+    },
+    {
+      "name": "hyperframes-cli",
+      "description": "Use the HyperFrames CLI development loop: init, add, catalog, capture, lint, check, snapshot, compare, grade-compare, preview, play, present, beats, keyframes, single or batch render, publish, cloud, cloudrun, feedback, lambda, doctor, browser, info, upgrade, skills, compositions, docs, benchmark, telemetry, transcribe, auth, tts, and remove-background. Also use when diagnosing build or render failures. validate, inspect, and layout are deprecated aliases; use check. Covers local, HeyGen-hosted cloud, AWS Lambda, and Google Cloud Run rendering.",
+      "source": "agents-skills-personal"
+    },
+    {
+      "name": "hyperframes-core",
+      "description": "The HyperFrames composition contract , build one renderable project. Use for composition structure, the `data-*` timing attributes, `class=\"clip\"`, tracks, sub-compositions, variables, framework-owned media playback, deterministic-render rules, and validation. Read before writing composition HTML.",
+      "source": "agents-skills-personal"
+    },
+    {
+      "name": "hyperframes-creative",
+      "description": "Non-animation creative direction for HyperFrames videos. Use for design spec (frame.md / design.md) handling, palettes, typography, narration, beat planning, audio-reactive visuals, composition patterns, and brand / style decisions. For atomic motion patterns and scene blueprints, use `hyperframes-animation`.",
+      "source": "agents-skills-personal"
+    },
+    {
+      "name": "hyperframes-keyframes",
+      "description": "Use when a HyperFrames composition needs a punch-in, punch-out, zoom, reframe, Ken Burns treatment, camera move, visual match/whip handoff, or other seek-safe 2D/3D keyframes; also for GSAP, CSS keyframes, Anime.js, WAAPI, FLIP, paths, masks, SVG morph/draw, text trails, 3D depth, or `hyperframes keyframes` diagnostics. Don't use for broad scene strategy, brand design, media sourcing, captions, or general video planning.",
+      "source": "agents-skills-personal"
+    },
+    {
+      "name": "mcporter",
+      "description": "List, configure, authenticate, call, and inspect MCP servers/tools with mcporter over HTTP or stdio.",
+      "source": "openclaw-bundled"
+    },
+    {
+      "name": "meme-maker",
+      "description": "Search meme templates, suggest formats, and generate local or hosted image memes.",
+      "source": "openclaw-bundled"
+    },
+    {
+      "name": "model-usage",
+      "description": "Summarize CodexBar local cost logs by model for Codex or Claude, including current or full breakdowns.",
+      "source": "openclaw-bundled"
+    },
+    {
+      "name": "nano-pdf",
+      "description": "Edit PDFs with natural-language instructions using the nano-pdf CLI.",
+      "source": "openclaw-bundled"
+    },
+    {
+      "name": "node-connect",
+      "description": "Diagnose OpenClaw Control UI browser and native Android, iOS, or macOS node connection failures across route, auth, pairing, QR/setup-code, and reconnect states.",
+      "source": "openclaw-bundled"
+    },
+    {
+      "name": "node-inspect-debugger",
+      "description": "Debug Node.js with node inspect, --inspect, breakpoints, CDP, heap, and CPU profiles.",
+      "source": "openclaw-bundled"
+    },
+    {
+      "name": "notion",
+      "description": "Notion CLI/API for pages, Markdown content, data sources, files, comments, search, Workers, and raw API calls.",
+      "source": "openclaw-bundled"
+    },
+    {
+      "name": "obsidian",
+      "description": "Work with Obsidian vaults using the official obsidian CLI: read/search/create/edit notes, tasks, links, properties, plugins.",
+      "source": "openclaw-bundled"
+    },
+    {
+      "name": "openai-whisper",
+      "description": "Local speech-to-text with the Whisper CLI (no API key).",
+      "source": "openclaw-bundled"
+    },
+    {
+      "name": "openai-whisper-api",
+      "description": "OpenAI Audio Transcriptions API via curl; gpt-4o-transcribe, mini, diarize, or whisper-1.",
+      "source": "openclaw-bundled"
+    },
+    {
+      "name": "openhue",
+      "description": "Control Philips Hue lights and scenes via the OpenHue CLI.",
+      "source": "openclaw-bundled"
+    },
+    {
+      "name": "oracle",
+      "description": "Oracle CLI second-model review/debug/refactor/design with selected files, dry-run token checks, API or browser engine.",
+      "source": "openclaw-bundled"
+    },
+    {
+      "name": "ordercli",
+      "description": "Foodora-only CLI for checking past orders and active order status (Deliveroo WIP).",
+      "source": "openclaw-bundled"
+    },
+    {
+      "name": "peekaboo",
+      "description": "Capture and automate macOS UI with the Peekaboo CLI.",
+      "source": "openclaw-bundled"
+    },
+    {
+      "name": "python-debugpy",
+      "description": "Debug Python with pdb, breakpoint(), post-mortem inspection, and debugpy remote attach.",
+      "source": "openclaw-bundled"
+    },
+    {
+      "name": "sag",
+      "description": "ElevenLabs text-to-speech with mac-style say UX.",
+      "source": "openclaw-bundled"
+    },
+    {
+      "name": "shared-resource-review",
+      "description": "Review shared documents and embedded guides; identify requirements and unread scope.",
+      "source": "bank-optional-skill"
+    },
+    {
+      "name": "sherpa-onnx-tts",
+      "description": "Local text-to-speech via sherpa-onnx (offline, no cloud)",
+      "source": "openclaw-bundled"
+    },
+    {
+      "name": "skill-creator",
+      "description": "Author or review AgentSkills: create, repair, validate, or restructure SKILL.md files and bundled resources.",
+      "source": "openclaw-bundled"
+    },
+    {
+      "name": "songsee",
+      "description": "Generate spectrograms and feature-panel visualizations from audio with the songsee CLI.",
+      "source": "openclaw-bundled"
+    },
+    {
+      "name": "sonoscli",
+      "description": "Control Sonos speakers (discover/status/play/volume/group).",
+      "source": "openclaw-bundled"
+    },
+    {
+      "name": "spike",
+      "description": "Run throwaway prototypes to validate feasibility, compare approaches, and report a verdict.",
+      "source": "openclaw-bundled"
+    },
+    {
+      "name": "spotify-player",
+      "description": "Terminal Spotify playback/search via spogo (preferred) or spotify_player.",
+      "source": "openclaw-bundled"
+    },
+    {
+      "name": "summarize",
+      "description": "Summarize or transcribe URLs, YouTube/videos, podcasts, articles, transcripts, PDFs, and local files.",
+      "source": "openclaw-bundled"
+    },
+    {
+      "name": "survey-requirements-review",
+      "description": "Review forms and survey requirements; prepare an offline checklist without changing answers.",
+      "source": "bank-optional-skill"
+    },
+    {
+      "name": "taskflow",
+      "description": "Run approval-gated workflows with durable TaskFlow state; distinguish workflow execution from linking real detached tasks.",
+      "source": "openclaw-bundled"
+    },
+    {
+      "name": "taskflow-inbox-triage",
+      "description": "Preview synthetic inbox routing with a real TaskFlow approval pause, and identify the adapters needed for live triage.",
+      "source": "openclaw-bundled"
+    },
+    {
+      "name": "things-mac",
+      "description": "Add, update, list, search, or inspect Things 3 todos, inbox, today, projects, areas, and tags on macOS.",
+      "source": "openclaw-bundled"
+    },
+    {
+      "name": "tmux",
+      "description": "Control tmux sessions/panes for interactive CLIs: list, capture output, send keys, paste text, monitor prompts.",
+      "source": "openclaw-bundled"
+    },
+    {
+      "name": "trello",
+      "description": "Manage Trello boards, lists, and cards via the Trello REST API.",
+      "source": "openclaw-bundled"
+    },
+    {
+      "name": "weather",
+      "description": "Current weather and forecasts with web_fetch, falling back to wttr.in curl for locations, rain, temperature, travel planning.",
+      "source": "openclaw-bundled"
+    },
+    {
+      "name": "xurl",
+      "description": "xurl CLI for authenticated X posts, replies, reads/search, DMs, media upload, followers, auth status, or raw v2 API calls.",
+      "source": "openclaw-bundled"
+    }
+  ]
+}

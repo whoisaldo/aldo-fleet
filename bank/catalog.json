@@ -1,0 +1,547 @@
+{
+  "schema_version": 1,
+  "modules": {
+    "coding-agents": {
+      "title": "Coding agents",
+      "use_when": "You want coding in a local repository.",
+      "skip_when": "You only want assistant or networking recipes.",
+      "requires": [],
+      "files": [
+        "docs/modules/coding-agents.md"
+      ],
+      "skills": [],
+      "external_setup": [
+        "Install and sign into your own Codex or Claude Code."
+      ]
+    },
+    "t3-code": {
+      "title": "T3 Code",
+      "use_when": "You want a desktop workspace, delegated tasks and reviews.",
+      "skip_when": "Your terminal or IDE already suits you.",
+      "requires": [
+        "coding-agents"
+      ],
+      "files": [
+        "docs/modules/t3-code.md",
+        "scripts/t3-api.mjs",
+        "scripts/check-t3.py",
+        "scripts/fleetlib.py",
+        "fleet.json",
+        "profiles"
+      ],
+      "skills": [],
+      "external_setup": [
+        "Install T3 Code; add your own repository and authenticated providers."
+      ]
+    },
+    "openclaw": {
+      "title": "OpenClaw",
+      "use_when": "You want a persistent assistant, channels, browser work or schedules.",
+      "skip_when": "You only need coding sessions.",
+      "requires": [],
+      "files": [
+        "docs/modules/openclaw.md"
+      ],
+      "skills": [],
+      "external_setup": [
+        "Install/onboard your own OpenClaw, choose model access and tool permissions."
+      ]
+    },
+    "tailscale": {
+      "title": "Tailscale",
+      "use_when": "You want private remote machines, SSH or previews.",
+      "skip_when": "You work locally and do not need a private network.",
+      "requires": [],
+      "files": [
+        "docs/modules/tailscale.md"
+      ],
+      "skills": [],
+      "external_setup": [
+        "Install Tailscale on your devices and choose sharing/grants."
+      ]
+    },
+    "cloudflare": {
+      "title": "Cloudflare Tunnel",
+      "use_when": "A friend needs a preview without joining your tailnet.",
+      "skip_when": "Tailscale or local access is enough.",
+      "requires": [],
+      "files": [
+        "docs/modules/cloudflare.md",
+        "bank/examples/cloudflared.yml"
+      ],
+      "skills": [],
+      "external_setup": [
+        "Install cloudflared; use email restrictions or named Tunnel plus Access."
+      ]
+    },
+    "proxy": {
+      "title": "Inference proxy / CLIProxyAPI",
+      "use_when": "You want isolated gateway profiles or clients on several machines.",
+      "skip_when": "Native agent authentication already does what you need.",
+      "requires": [
+        "fleet-tools",
+        "tailscale"
+      ],
+      "files": [
+        "docs/modules/proxy.md"
+      ],
+      "skills": [],
+      "external_setup": [
+        "Configure your own Apple Silicon Mac gateway, fresh logins and client keys."
+      ]
+    },
+    "fleet-tools": {
+      "title": "Fleet tasks, releases and profiles",
+      "use_when": "You want isolated worktrees, leases or pinned custom skill releases.",
+      "skip_when": "You just want to copy a few skills.",
+      "requires": [],
+      "files": [
+        "docs/modules/fleet-tools.md",
+        "scripts/fleet",
+        "scripts/fleetlib.py",
+        "scripts/gateway.py",
+        "scripts/portable.py",
+        "scripts/migrate-skills.py",
+        "scripts/check-cache.py",
+        "scripts/install-macos-tools.py",
+        "scripts/install-windows-tools.ps1",
+        "scripts/bootstrap-windows.ps1",
+        "fleet.json",
+        "profiles",
+        "machines",
+        "toolchains",
+        "docs/maintenance.md",
+        "docs/windows-deployment.md",
+        "tests/test_fleet.py",
+        "tests/test_migration.py",
+        "tests/test_portable.py"
+      ],
+      "skills": [],
+      "external_setup": []
+    },
+    "canvas-lms": {
+      "title": "Canvas LMS planning",
+      "use_when": "You use Canvas LMS and want an overview of planning and organization options.",
+      "skip_when": "You do not use Canvas or prefer its own calendar.",
+      "requires": [
+        "openclaw"
+      ],
+      "files": [
+        "docs/modules/canvas-lms.md"
+      ],
+      "skills": [
+        "canvas-planning"
+      ],
+      "external_setup": [
+        "Choose a supported integration and connect only your own authorized account if you want live access."
+      ]
+    },
+    "openclaw-canvas": {
+      "title": "OpenClaw visual canvas / widgets",
+      "use_when": "You want visual documents, widgets or session dashboards.",
+      "skip_when": "Text chat is enough.",
+      "requires": [
+        "openclaw"
+      ],
+      "files": [
+        "docs/modules/openclaw-canvas.md"
+      ],
+      "skills": [],
+      "external_setup": [
+        "Check the visual feature supported by your installed OpenClaw version."
+      ]
+    },
+    "video": {
+      "title": "Video and creative workflows",
+      "use_when": "You want project launch videos or custom motion.",
+      "skip_when": "You do not make videos.",
+      "requires": [],
+      "files": [
+        "docs/modules/video.md",
+        "bank/licenses"
+      ],
+      "skills": [
+        "brag",
+        "hyperframes-animation",
+        "hyperframes-creative",
+        "hyperframes-cli",
+        "hyperframes-core",
+        "hyperframes-keyframes"
+      ],
+      "external_setup": [
+        "Install HyperFrames and the dependencies described in the selected skills."
+      ]
+    },
+    "personal-bridges": {
+      "title": "Personal image, 3D and visual QA bridges",
+      "use_when": "You want Claude to use native personal Codex for specialized tasks.",
+      "skip_when": "You use built-in equivalents or employer work.",
+      "requires": [
+        "coding-agents"
+      ],
+      "files": [
+        "docs/modules/personal-bridges.md"
+      ],
+      "skills": [
+        "codex-image",
+        "codex-3d",
+        "codex-computer-use"
+      ],
+      "external_setup": [
+        "Mac/POSIX worker with your own native personal Codex login; preserve pinned specialized models."
+      ]
+    },
+    "provider-skills": {
+      "title": "Provider-owned skills and plugins",
+      "use_when": "You want documents, research, calendar, browser or other provider capabilities.",
+      "skip_when": "The bundled portable skills cover your needs.",
+      "requires": [],
+      "files": [
+        "docs/modules/provider-skills.md",
+        "bank/openclaw-source-catalog.json"
+      ],
+      "skills": [],
+      "external_setup": [
+        "Discover/install through your provider; do not copy organization-synced runtime files."
+      ]
+    },
+    "assistant-extras": {
+      "title": "Assistant channels, memory and wearables",
+      "use_when": "You want Discord/calendar/memory, local models or G2 glasses integrations.",
+      "skip_when": "You do not use these integrations.",
+      "requires": [
+        "openclaw"
+      ],
+      "files": [
+        "docs/modules/assistant-extras.md",
+        "bank/automation/daily-brief.template.json"
+      ],
+      "skills": [],
+      "external_setup": [
+        "Configure each connector/device with your own accounts; custom wearable bridges need their own deployment."
+      ]
+    },
+    "legacy": {
+      "title": "Legacy and deprecated references",
+      "use_when": "You want the older multi-account or deployment examples.",
+      "skip_when": "You are starting fresh.",
+      "requires": [],
+      "files": [
+        "docs/modules/legacy.md",
+        "imports",
+        "examples/legacy-fleet.json",
+        "docs/legacy-reference.md",
+        "docs/legacy-maintenance.md",
+        "docs/legacy-windows-deployment.md",
+        "docs/cache-verification.md",
+        "docs/setup-validation.md"
+      ],
+      "skills": [],
+      "external_setup": []
+    },
+    "document-reviews": {
+      "title": "Document and form reviews",
+      "use_when": "You want to review shared documents, embedded guides or form requirements.",
+      "skip_when": "You do not need document or form review.",
+      "requires": [
+        "openclaw"
+      ],
+      "files": [
+        "docs/modules/document-reviews.md"
+      ],
+      "skills": [
+        "shared-resource-review",
+        "survey-requirements-review"
+      ],
+      "external_setup": [
+        "Use your own authorized document and browser access."
+      ]
+    }
+  },
+  "skills": {
+    "baseline-ui": {
+      "path": "skills/baseline-ui",
+      "description": "Enforces an opinionated UI baseline to prevent AI-generated interface slop.",
+      "runtime": "portable",
+      "requires": []
+    },
+    "codex-3d": {
+      "path": "skills/codex-3d",
+      "description": "Collaboratively build and refine 3D geometry and animatable vector objects with Claude and GPT-6.1 Sol through Codex, exclusively at max reasoning. Use for three.js/WebGL objects, GLB/glTF or Blender models, procedural assets, or SVG objects with independently animated parts. Claude develops the brief, reviews the geometry and renders, and integrates the result; Sol reasons through modeling choices and implements or revises the asset. Static pictures belong to codex-image. Excludes UI layout, charts, icon sets, and app screenshots.",
+      "runtime": "claude-personal",
+      "requires": [
+        "personal-bridges"
+      ]
+    },
+    "codex-computer-use": {
+      "path": "skills/codex-computer-use",
+      "description": "Hand a running web UI to GPT-6-Astra at max reasoning, through the Codex CLI, so it drives the page in a real headless Chrome, screenshots it, looks at every screenshot, and reports check results and defects with evidence. Use after building or changing UI, when asked to verify, QA, test, \"check that it works\", \"does it look right\", compare a page against a design, or get visual feedback on a page, form, flow or dashboard that is running at a URL. Use it as the verifier in a build-verify-fix loop - Claude writes the code, Astra checks it. Do NOT use to generate images (codex-image), build 3D or vector objects, write unit or e2e test files, review source without running it, or drive native macOS apps (Codex's native Computer Use exists only in the desktop app).",
+      "runtime": "claude-personal",
+      "requires": [
+        "personal-bridges"
+      ]
+    },
+    "codex-image": {
+      "path": "skills/codex-image",
+      "description": "Generate real raster images (PNG) via the Codex CLI's built-in image_gen tool \u2014 hero images, marketing visuals, illustrations, mascots, textures, backgrounds, product/device mockups, concept art, og:image cards, empty-state art, transparent cutouts. Use when a task needs an actual picture that would otherwise be faked with hand-written SVG, CSS gradients, emoji, or a placeholder box. Do NOT use for building or changing UI code, layout, CSS, components, data charts, existing SVG icon systems, or screenshots of a real running app. Do NOT use when the deliverable is a 3D object or scene, or a vector object, that must be rotated, animated part by part, or embedded as geometry (three.js/WebGL, animatable SVG): use codex-3d for collaborative modeling with GPT-6.1 Sol at max reasoning.",
+      "runtime": "claude-personal",
+      "requires": [
+        "personal-bridges"
+      ]
+    },
+    "fixing-accessibility": {
+      "path": "skills/fixing-accessibility",
+      "description": "Fix accessibility issues.",
+      "runtime": "portable",
+      "requires": []
+    },
+    "fixing-motion-performance": {
+      "path": "skills/fixing-motion-performance",
+      "description": "Fix animation performance issues.",
+      "runtime": "portable",
+      "requires": []
+    },
+    "fleet-operate": {
+      "path": "skills/fleet-operate",
+      "description": "Inspect or configure the user's fleet machines, profiles, shared skills or gateway. Use for fleet maintenance and machine routing, not ordinary application edits.",
+      "runtime": "portable",
+      "requires": [
+        "fleet-tools"
+      ]
+    },
+    "frontend-design": {
+      "path": "skills/frontend-design",
+      "description": "Create distinctive, production-grade frontend interfaces with high design quality. Use this skill when the user asks to build web components, pages, artifacts, posters, or applications (examples include websites, landing pages, dashboards, React components, HTML/CSS layouts, or when styling/beautifying any web UI). Generates creative, polished code and UI design that avoids generic AI aesthetics.",
+      "runtime": "portable",
+      "requires": []
+    },
+    "orchestrate-trifecta": {
+      "path": "skills/orchestrate-trifecta",
+      "description": "Coordinate implementation and independent review through T3 delegated tasks. Use when the user asks for trifecta, orchestration, builders or reviewers. Skip quick edits and delegated child tasks.",
+      "runtime": "portable",
+      "requires": [
+        "t3-code"
+      ]
+    },
+    "remote-handoff": {
+      "path": "skills/remote-handoff",
+      "description": "Prepare and verify a development task on a configured remote Mac or Windows worker. Use when work needs another machine or native Windows display testing.",
+      "runtime": "portable",
+      "requires": [
+        "fleet-tools"
+      ]
+    },
+    "resume-craft": {
+      "path": "skills/resume-craft",
+      "description": "Research-backed resume writing, rewriting, tailoring, and review. Use this skill whenever the user mentions a resume or CV in any form \u2014 writing one from scratch, updating an old one, tailoring to a job description, reviewing/critiquing, rewriting bullet points, \"making it ATS-friendly\", checking length, or asking what recruiters look for. Also trigger for LinkedIn experience sections, job-application materials, or when a user pastes a job posting and their background together, even if they don't say the word \"resume\". Built on the Cultivated Culture 125k-resume dataset, Gergely Orosz's The Tech Resume Inside Out, Ladders eye-tracking, ResumeGo callback studies, and 2025\u20132026 recruiter surveys on AI-written applications.",
+      "runtime": "portable",
+      "requires": []
+    },
+    "task-to-review": {
+      "path": "skills/task-to-review",
+      "description": "Carry an authorized code task through an isolated worktree, relevant checks, preview, and reviewable change. Use when the user asks to take a task to completion or prepare it for review.",
+      "runtime": "portable",
+      "requires": []
+    },
+    "unslop": {
+      "path": "skills/unslop",
+      "description": "Cut AI tells from any writing. Must always apply.",
+      "runtime": "portable",
+      "requires": []
+    },
+    "brag": {
+      "path": "vendor/skills/brag",
+      "description": "Turn the current project website into a short, polished, shareable launch video using Hyperframes. Use when someone says \"/brag\", \"let's brag about this\", \"make a launch video\", \"turn this into a video\", or wants to share what they built. Reads the project code directly \u2014 no live URL or screenshots needed.",
+      "runtime": "portable",
+      "requires": [
+        "video"
+      ]
+    },
+    "hyperframes-animation": {
+      "path": "vendor/skills/hyperframes-animation",
+      "description": "All animation knowledge for HyperFrames \u2014 atomic motion rules, multi-phase scene blueprints, scene transitions, broader motion-design techniques, AND the seven runtime adapters (GSAP default, plus Lottie, Three.js, Anime.js, CSS keyframes, Web Animations API, TypeGPU). Use for any motion or animation task: pick 2-4 rules and compose, or load a blueprint, or look up runtime-specific API (e.g. GSAP eases / Lottie player / Three.js mixer). Also covers auditing an existing composition's choreography (animation map) and 24 named text-animation effects. HyperFrames-native: single paused timeline, seek-safe, deterministic.",
+      "runtime": "portable",
+      "requires": [
+        "video"
+      ]
+    },
+    "hyperframes-cli": {
+      "path": "vendor/skills/hyperframes-cli",
+      "description": ">",
+      "runtime": "portable",
+      "requires": [
+        "video"
+      ]
+    },
+    "hyperframes-core": {
+      "path": "vendor/skills/hyperframes-core",
+      "description": "The HyperFrames composition contract \u2014 build one renderable project. Use for composition structure, the `data-*` timing attributes, `class=\"clip\"`, tracks, sub-compositions, variables, framework-owned media playback, deterministic-render rules, and validation. Read before writing composition HTML.",
+      "runtime": "portable",
+      "requires": [
+        "video"
+      ]
+    },
+    "hyperframes-creative": {
+      "path": "vendor/skills/hyperframes-creative",
+      "description": "Non-animation creative direction for HyperFrames videos. Use for design spec (frame.md / design.md) handling, palettes, typography, narration, beat planning, audio-reactive visuals, composition patterns, and brand / style decisions. For atomic motion patterns and scene blueprints, use `hyperframes-animation`.",
+      "runtime": "portable",
+      "requires": [
+        "video"
+      ]
+    },
+    "hyperframes-keyframes": {
+      "path": "vendor/skills/hyperframes-keyframes",
+      "description": ">",
+      "runtime": "portable",
+      "requires": [
+        "video"
+      ]
+    },
+    "shared-resource-review": {
+      "path": "bank/skills/shared-resource-review",
+      "description": "Review shared documents and embedded guides; identify requirements and unread scope.",
+      "runtime": "openclaw",
+      "requires": []
+    },
+    "survey-requirements-review": {
+      "path": "bank/skills/survey-requirements-review",
+      "description": "Review forms and survey requirements; prepare an offline checklist without changing answers.",
+      "runtime": "openclaw",
+      "requires": []
+    },
+    "canvas-planning": {
+      "path": "bank/skills/canvas-planning",
+      "description": "Explore optional Canvas LMS planning capabilities, using the user's own supported integrations.",
+      "status": "optional",
+      "requires": [
+        "canvas-lms"
+      ]
+    }
+  },
+  "presets": {
+    "minimal": {
+      "description": "A few portable UI/writing skills. No accounts or services selected.",
+      "modules": [],
+      "skills": [
+        "unslop",
+        "baseline-ui",
+        "frontend-design"
+      ]
+    },
+    "personal-code": {
+      "description": "Coding plus T3; no school or assistant setup.",
+      "modules": [
+        "t3-code"
+      ],
+      "skills": [
+        "unslop",
+        "baseline-ui",
+        "frontend-design",
+        "fixing-accessibility",
+        "fixing-motion-performance",
+        "task-to-review",
+        "orchestrate-trifecta"
+      ]
+    },
+    "work-code": {
+      "description": "Portable coding skills for an employer-approved environment. No personal bridges/proxy.",
+      "modules": [
+        "coding-agents"
+      ],
+      "skills": [
+        "unslop",
+        "baseline-ui",
+        "frontend-design",
+        "fixing-accessibility",
+        "fixing-motion-performance",
+        "task-to-review"
+      ]
+    },
+    "student": {
+      "description": "Optional Canvas planning, OpenClaw and document review capabilities.",
+      "modules": [
+        "canvas-lms",
+        "document-reviews"
+      ],
+      "skills": [
+        "unslop",
+        "canvas-planning"
+      ]
+    },
+    "remote": {
+      "description": "Remote coding, private networking and preview sharing.",
+      "modules": [
+        "t3-code",
+        "tailscale",
+        "cloudflare",
+        "proxy"
+      ],
+      "skills": [
+        "unslop",
+        "baseline-ui",
+        "frontend-design",
+        "fixing-accessibility",
+        "fixing-motion-performance",
+        "task-to-review",
+        "remote-handoff",
+        "orchestrate-trifecta"
+      ]
+    },
+    "creative": {
+      "description": "Design, video, resume and personal specialized bridges.",
+      "modules": [
+        "video",
+        "personal-bridges"
+      ],
+      "skills": [
+        "frontend-design",
+        "baseline-ui",
+        "resume-craft"
+      ]
+    },
+    "everything": {
+      "description": "Export the whole bank for reference. Nothing is installed or enabled.",
+      "modules": [
+        "coding-agents",
+        "t3-code",
+        "openclaw",
+        "tailscale",
+        "cloudflare",
+        "proxy",
+        "fleet-tools",
+        "canvas-lms",
+        "openclaw-canvas",
+        "document-reviews",
+        "video",
+        "personal-bridges",
+        "provider-skills",
+        "assistant-extras",
+        "legacy"
+      ],
+      "skills": [
+        "baseline-ui",
+        "codex-3d",
+        "codex-computer-use",
+        "codex-image",
+        "fixing-accessibility",
+        "fixing-motion-performance",
+        "fleet-operate",
+        "frontend-design",
+        "orchestrate-trifecta",
+        "remote-handoff",
+        "resume-craft",
+        "task-to-review",
+        "unslop",
+        "brag",
+        "hyperframes-animation",
+        "hyperframes-cli",
+        "hyperframes-core",
+        "hyperframes-creative",
+        "hyperframes-keyframes",
+        "shared-resource-review",
+        "canvas-planning",
+        "survey-requirements-review"
+      ]
+    }
+  }
+}

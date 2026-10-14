@@ -1,0 +1,172 @@
+{
+  "schema_version": 1,
+  "owner": "Ali",
+  "state_dir": "~/Services/fleet",
+  "gateway": {
+    "url": "http://100.64.0.1:8317",
+    "version": "8.0.16",
+    "release_sha256": "b2c48e27b62bc94c71387e43be287c742b0336f21e2fe203568233593983d495",
+    "runtime_dir": "~/Services/fleet-gateway",
+    "service_label": "org.sharedfleet.fleet-gateway",
+    "accounts_per_provider": 1,
+    "expected_email": "your-email@example.com",
+    "providers": [
+      "claude",
+      "codex"
+    ]
+  },
+  "machines": {
+    "devbox1": {
+      "os": "macos",
+      "user": "your-user",
+      "address": "100.64.0.1",
+      "ssh": "devbox1",
+      "repo": "/Users/your-user/fleet",
+      "roles": [
+        "development",
+        "macos",
+        "ios",
+        "browser",
+        "blender",
+        "gateway"
+      ],
+      "heavy_build_slots": 1
+    },
+    "mainpc": {
+      "os": "windows",
+      "user": "your-user",
+      "address": "100.64.0.2",
+      "ssh": "mainpc",
+      "repo": "D:\\AgentWork\\fleet",
+      "work_root": "D:\\AgentWork",
+      "roles": [
+        "windows",
+        "gpu",
+        "display"
+      ],
+      "heavy_build_slots": 1,
+      "interactive_tests_require_login": true
+    },
+    "macbook-pro-2": {
+      "os": "macos",
+      "user": "your-user",
+      "address": "100.64.0.3",
+      "ssh": "macbook-pro-2",
+      "repo": "/Users/your-user/fleet",
+      "roles": [
+        "control",
+        "review"
+      ]
+    }
+  },
+  "profiles": {
+    "personal-codex": {
+      "driver": "codex",
+      "identity": "personal",
+      "home": "~/.codex",
+      "managed": false
+    },
+    "work-codex": {
+      "driver": "codex",
+      "identity": "work",
+      "home": "~/.codex_work",
+      "managed": false
+    },
+    "personal-claude": {
+      "driver": "claude",
+      "identity": "personal",
+      "home": "~/.claude",
+      "managed": false
+    },
+    "secondary-claude": {
+      "driver": "claude",
+      "identity": "secondary",
+      "home": "~/.claude_secondary",
+      "managed": false
+    },
+    "fleet-codex": {
+      "driver": "codex",
+      "identity": "personal",
+      "home": "~/.codex_fleet",
+      "managed": true,
+      "transport": "gateway",
+      "model": "gpt-6-astra",
+      "effort": "xhigh",
+      "t3_instance": "codex_fleet"
+    },
+    "fleet-claude": {
+      "driver": "claude",
+      "identity": "personal",
+      "home": "~/.claude_fleet",
+      "managed": true,
+      "transport": "gateway",
+      "model": "claude-fable-5-1[1m]",
+      "effort": "xhigh",
+      "t3_instance": "claudeAgent_fleet"
+    },
+    "fleet-secondary": {
+      "driver": "claude",
+      "identity": "secondary",
+      "home": "~/.claude_secondary_fleet",
+      "managed": true,
+      "transport": "gateway",
+      "gateway": "secondary",
+      "model": "claude-opus-5-5",
+      "effort": "xhigh",
+      "t3_instance": "claudeAgent_fleet_secondary"
+    }
+  },
+  "protected_services": {
+    "t3-desktop": {
+      "ports": [
+        3773
+      ],
+      "owner": "T3 Code Nightly desktop app"
+    },
+    "t3-phone-forwarder": {
+      "ports": [
+        3774
+      ],
+      "owner": "com.openclaw.t3-phone-forward"
+    },
+    "openclaw": {
+      "ports": [
+        18789,
+        18799
+      ],
+      "owner": "ai.openclaw.gateway"
+    },
+    "ollama": {
+      "ports": [
+        11434
+      ],
+      "owner": "dev.hushtype.ollama"
+    },
+    "blender": {
+      "ports": [
+        9876
+      ],
+      "owner": "existing Blender process"
+    },
+    "dockmaster": {
+      "ports": [
+        36252
+      ],
+      "owner": "existing Dockmaster process"
+    }
+  },
+  "additional_gateways": {
+    "secondary": {
+      "url": "http://100.64.0.1:8318",
+      "version": "8.0.16",
+      "runtime_dir": "~/Services/fleet-gateway-secondary",
+      "service_label": "org.sharedfleet.fleet-gateway-secondary",
+      "accounts_per_provider": 1,
+      "providers": [
+        "claude"
+      ],
+      "identity": "secondary",
+      "expected_email": "your-school-email@example.edu"
+    }
+  }
+}

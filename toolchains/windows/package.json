@@ -1,0 +1,9 @@
+{
+    "private":  true,
+    "name":  "shared-fleet-windows-tools",
+    "version":  "1.0.0",
+    "dependencies":  {
+                         "@openai/codex":  "0.160.0",
+                         "@anthropic-ai/claude-code":  "2.1.289"
+                     }
+}
