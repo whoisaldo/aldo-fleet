@@ -317,8 +317,8 @@
     },
     "orchestrate-trifecta": {
       "path": "skills/orchestrate-trifecta",
-      "description": "Coordinate implementation and independent review through T3 delegated tasks. Use when the user asks for trifecta, orchestration, builders or reviewers. Skip quick edits and delegated child tasks.",
-      "runtime": "portable",
+      "description": "Coordinate a three-account T3 build and review workflow, with provider placeholders, usage checks and setup notes.",
+      "runtime": "claude-personal",
       "requires": [
         "t3-code"
       ]

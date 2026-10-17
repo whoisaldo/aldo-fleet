@@ -66,6 +66,11 @@ Every recipe says when it helps, when to skip it, what setup is needed and how t
 
 There are 22 bundled skills: 19 base fleet skills and three general assistant skills. [The skill catalog](docs/skills.md) describes them. Built-ins, synced organization skills and plugin-owned capabilities remain with their providers; the bank records how to discover them without copying private runtime directories.
 
+The [full trifecta workflow](skills/orchestrate-trifecta/README.md) includes
+redacted instructions and a configurable usage helper for three-account T3
+builds and reviews. Map its provider placeholders and configure your own
+usage gateways before running it. No account credentials are included.
+
 ## Ask your agent to help choose
 
 You can open this clone in your coding agent and say:

@@ -15,7 +15,7 @@ Use `python3 scripts/bank.py list` to see selectable modules, skills and presets
 | task-to-review | Takes code work through checks and a reviewable result | Optional fleet task and lease helpers |
 | fleet-operate | Maintains configured fleet profiles and machines | Read your own fleet.json |
 | remote-handoff | Prepares work for another configured worker | Optional SSH worker; Windows display needs interactive login |
-| orchestrate-trifecta | Delegates builds and independent reviews | T3 orchestration tools and authorized providers |
+| [orchestrate-trifecta](../skills/orchestrate-trifecta/README.md) | Coordinates builds and reviews across three selected accounts | T3 tools, your own provider IDs and compatible usage gateway configuration |
 | codex-image | Generates and edits raster images through Codex | Older Claude-only personal bridge, Mac/POSIX and native Codex |
 | codex-3d | Creates 3D artifacts through Codex | Older Claude-only personal bridge; Blender for relevant modes |
 | codex-computer-use | Runs visual browser QA through Codex | Older Claude-only personal bridge; browser dependencies |
