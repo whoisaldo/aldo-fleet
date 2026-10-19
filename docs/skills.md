@@ -1,6 +1,6 @@
 # Skill bank
 
-The bank keeps 19 base fleet skills and three general assistant skills, for 22 bundled skills. Canvas LMS is an optional planning capability guide. OpenClaw visual canvas/widgets are a separate recipe.
+The bank keeps 20 base fleet skills and three general assistant skills, for 23 bundled skills. Canvas LMS is an optional planning capability guide. OpenClaw visual canvas/widgets are a separate recipe.
 
 Use `python3 scripts/bank.py list` to see selectable modules, skills and presets. Base sources remain in `skills/` and `vendor/skills/`; optional assistant sources live in `bank/skills/`. Provider-owned skills are cataloged rather than copied.
 
@@ -12,6 +12,7 @@ Use `python3 scripts/bank.py list` to see selectable modules, skills and presets
 | fixing-motion-performance | Fixes animation performance | Uses the project's tools |
 | unslop | Edits writing into plain language | No fleet service required |
 | resume-craft | Writes and reviews resumes and application material | Kept for future job changes, even with a full-time role |
+| [job-apply](../skills/job-apply/README.md) | Tailors a resume, fills an application draft and builds a screenshot review before approved submission | Your own private profile answers and a browser tool your agent can drive |
 | task-to-review | Takes code work through checks and a reviewable result | Optional fleet task and lease helpers |
 | fleet-operate | Maintains configured fleet profiles and machines | Read your own fleet.json |
 | remote-handoff | Prepares work for another configured worker | Optional SSH worker; Windows display needs interactive login |

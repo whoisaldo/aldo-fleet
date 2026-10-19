@@ -1,0 +1,4 @@
+interface:
+  display_name: "Job application"
+  short_description: "Tailor, fill, and review applications before approval"
+  default_prompt: "Use $job-apply to tailor my resume to this posting, prepare the application, and give me screenshots in an HTML review file before any submission."

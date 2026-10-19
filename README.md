@@ -64,7 +64,7 @@ Every recipe says when it helps, when to skip it, what setup is needed and how t
 | [Assistant extras](docs/modules/assistant-extras.md) | Channels, memory, calendar, local models and glasses integration notes |
 | [Legacy](docs/modules/legacy.md) | Deprecated setup examples and older multi-account references |
 
-There are 22 bundled skills: 19 base fleet skills and three general assistant skills. [The skill catalog](docs/skills.md) describes them. Built-ins, synced organization skills and plugin-owned capabilities remain with their providers; the bank records how to discover them without copying private runtime directories.
+There are 23 bundled skills: 20 base fleet skills and three general assistant skills. [The skill catalog](docs/skills.md) describes them. Built-ins, synced organization skills and plugin-owned capabilities remain with their providers; the bank records how to discover them without copying private runtime directories.
 
 The [full trifecta workflow](skills/orchestrate-trifecta/README.md) includes
 redacted instructions and a configurable usage helper for three-account T3

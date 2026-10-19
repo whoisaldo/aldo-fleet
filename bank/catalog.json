@@ -315,6 +315,12 @@
       "runtime": "portable",
       "requires": []
     },
+    "job-apply": {
+      "path": "skills/job-apply",
+      "description": "Tailor the user's resume to one posting, fill the application as a saved draft, and build an HTML screenshot review before any approved submission.",
+      "runtime": "portable",
+      "requires": []
+    },
     "orchestrate-trifecta": {
       "path": "skills/orchestrate-trifecta",
       "description": "Coordinate a three-account T3 build and review workflow, with provider placeholders, usage checks and setup notes.",
@@ -496,7 +502,8 @@
       "skills": [
         "frontend-design",
         "baseline-ui",
-        "resume-craft"
+        "resume-craft",
+        "job-apply"
       ]
     },
     "everything": {
@@ -527,6 +534,7 @@
         "fixing-motion-performance",
         "fleet-operate",
         "frontend-design",
+        "job-apply",
         "orchestrate-trifecta",
         "remote-handoff",
         "resume-craft",
